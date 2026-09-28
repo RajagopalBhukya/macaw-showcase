@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#103d33" />
+  <meta name="description" content="An interactive visual journey with the blue-and-yellow macaw." />
+  <title>Wild Wings — The Macaw</title>
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23103d33'/%3E%3Cpath d='M14 44C26 10 42 13 51 19 47 34 34 48 14 44Z' fill='%23f5c54c'/%3E%3Cpath d='M23 43C32 23 41 20 51 19' fill='none' stroke='%232997bf' stroke-width='5'/%3E%3C/svg%3E" />
+  <link rel="preload" as="image" href="assets/hero.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Wild Wings home">Wild<span>Wings</span><i></i></a>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+      aria-controls="navigation"><span></span><span></span></button>
+    <nav id="navigation" aria-label="Main navigation">
+      <a href="#home">Home</a><a href="#experience">Explore Macaw</a><a href="#about">About</a><a
+        href="#details">Discover</a>
+    </nav>
+    <a class="header-cta" href="#experience">Explore now <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main">
+    <section id="home" class="sequence hero" aria-labelledby="hero-title">
+      <div class="sequence-sticky hero-inner">
+        <canvas id="sequence-canvas"
+          aria-label="Macaw animation: a bird opens its wings, takes flight, then returns to its perch"
+          role="img"></canvas>
+        <div class="sequence-shade"></div>
+        <!-- <h1 id="hero-title" class="hero-back-title">Wild <em>Wings</em></h1> -->
+        <p class="hero-kicker">A JOURNEY INTO THE WILD <span>01 / THE MACAW</span></p>
+        <div id="experience" class="story-anchor" aria-hidden="true"></div>
+        <div class="sequence-copy" aria-live="off"><span id="story-index" class="section-index">01 / THE
+            ENCOUNTER</span>
+          <h2 id="story-title">A moment<br /><em>takes flight.</em></h2>
+          <p id="story-description">In the hush of the forest, a flash of blue and gold catches the light.</p>
+        </div>
+        <div class="sequence-progress"><span>THE JOURNEY</span>
+          <div class="progress-track">
+            <div id="progress-fill"></div>
+          </div><output id="progress-number" aria-label="Animation progress">00%</output>
+        </div>
+        <div class="hero-scroll-hint">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></div>
+        <a class="sequence-next" href="#about">Meet the macaw <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <div class="about-top reveal"><span class="section-index">02 / THE BIRD</span><span>ARA ARARAUNA</span></div>
+      <div class="about-grid">
+        <div>
+          <h2 id="about-title" class="reveal">Nature, in<br />
+            <em>full color.</em>
+          </h2>
+          <p class="about-lede reveal">The blue-and-yellow macaw brings a flash of gold and sky blue to the tropical
+            forest.</p>
+          <a class="text-link reveal" href="#details">Discover the details <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="about-image reveal"><img src="assets/hero.jpg" loading="lazy" width="1280" height="720"
+            alt="Clear view of a blue-and-yellow macaw perched in a sunlit rainforest" /></div>
+      </div>
+    </section>
+
+    <section id="details" class="details" aria-labelledby="details-title">
+      <div class="details-heading reveal"><span class="section-index">03 / A CLOSER LOOK</span>
+        <h2 id="details-title">Beyond the <em>frame.</em></h2>
+      </div>
+      <div class="facts">
+        <article class="reveal"><span>01 / HABITAT</span>
+          <h3>Forest home</h3>
+          <p>Blue-and-yellow macaws live in tropical forests and woodlands across parts of South America.</p>
+        </article>
+        <article class="reveal"><span>02 / CHARACTER</span>
+          <h3>Social by nature</h3>
+          <p>These expressive parrots often travel in pairs and use loud calls to stay connected.</p>
+        </article>
+        <article class="reveal"><span>03 / FLIGHT</span>
+          <h3>Made to soar</h3>
+          <p>Long wings and a balancing tail help them move through the open canopy.</p>
+        </article>
+      </div>
+      <div class="closing reveal"><span>THE STORY CONTINUES</span><a href="#home">Back to the beginning <span
+            aria-hidden="true">↑</span></a></div>
+    </section>
+  </main>
+  <footer><a class="brand" href="#home">Wild<span>Wings</span><i></i></a>
+    <p>An interactive macaw study.</p><a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+
+</html>
